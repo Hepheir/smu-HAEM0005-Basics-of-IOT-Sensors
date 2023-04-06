@@ -2,6 +2,6 @@
 
 # 스케치 4-3 초음파센서 스케치
 
-Youtube:
+![](https://img.shields.io/badge/-Youtube-red?style=for-the-badge&logo=youtube)
 
-[![YOUTUBE](http://img.youtube.com/vi/7V1vB-zLwVY/0.jpg)](http://www.youtube.com/watch?v=7V1vB-zLwVY)
+[![YOUTUBE](https://img.youtube.com/vi/KUyCmE0Du3o/0.jpg)](http://www.youtube.com/watch?v=KUyCmE0Du3o)
