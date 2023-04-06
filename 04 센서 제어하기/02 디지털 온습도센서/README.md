@@ -2,6 +2,6 @@
 
 # 스케치 4-2 10.DHT11 스케치
 
-Youtube:
+![](https://img.shields.io/badge/-Youtube-red?style=for-the-badge&logo=youtube)
 
-[![YOUTUBE](http://img.youtube.com/vi/pUfh9-EEGaI/0.jpg)](http://www.youtube.com/watch?v=pUfh9-EEGaI "스케치 4-2 10.DHT11 스케치")
+[![YOUTUBE](https://img.youtube.com/vi/sRs-nz4o7aQ/0.jpg)](http://www.youtube.com/watch?v=sRs-nz4o7aQ)
