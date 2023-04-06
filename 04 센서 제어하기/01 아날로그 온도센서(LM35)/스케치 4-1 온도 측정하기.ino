@@ -2,23 +2,27 @@
   Author: 202115064 김동주 <hepheir@gmail.com>
 */
 
+#include <string.h>
+
 #define PIN A0
+#define SERIAL_OUTPUT_LEN 32
 
 int reading;
-float tempC;
+float celcius;
+char serialOutput[SERIAL_OUTPUT_LEN];
 
 void setup() {
-    Serial.begin(9600);
+  Serial.begin(9600);
+  Serial.println("Serial connected.");
 }
 
 void loop() {
-    reading = analogRead(PIN);
+  reading = analogRead(PIN);
 
-    // LM35's calculation formula
-    tempC = (5.0 * reading * 100.0) / 1024.0;
+  // LM35's calculation formula
+  celcius = (5.0 * reading * 100.0) / 1024.0;
 
-    Serial.print(tempC);
-    Serial.println(" 도");
-
-    delay(1000);
+  sprintf(serialOutput, "%sC (adc:%d)\n", String(celcius).c_str(), reading);
+  Serial.print(serialOutput);
+  delay(500);
 }
