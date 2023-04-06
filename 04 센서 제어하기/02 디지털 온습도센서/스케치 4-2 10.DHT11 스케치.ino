@@ -1,29 +1,25 @@
 /*
   Author: 202115064 김동주 <hepheir@gmail.com>
 
-  Prerequisite:
-    (Library) EduIntro by Arduino LLC (v0.0.16)
-    -> can be installed via Arduino IDE Library manager
+  Uses "DHT sensor library" by "Adafruit" v1.4.3
 */
 
-#include <EduIntro.h>
+#include "DHT.h"
 
 #define DHTPIN 2
 #define DHTTYPE DHT11
 
-DHT11 dht(DHTPIN);
+DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
     Serial.begin(9600);
+    dht.begin();
 }
 
 void loop() {
-    // EduIntro: read data and return status
-    dht.update();
-
-    delay(2000);
+    delay(1000);
     int h = dht.readHumidity();
-    int t = dht.readCelsius();
+    int t = dht.readTemperature();
 
     Serial.print("Humidity: ");
     Serial.print(h);
